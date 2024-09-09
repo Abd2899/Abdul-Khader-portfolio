@@ -95,6 +95,7 @@ nav ul li a:focus {
     justify-content: space-around;
     margin: 89px 0px;
     align-items: center;
+    position: relative;
 }
 
 .firstsection > div {
@@ -108,8 +109,7 @@ nav ul li a:focus {
 
 .buttons {
     padding: 10px;
-
-background: rgb(30, 33, 103);
+    background: rgb(30, 33, 103);
     border: 2px solid white;
     border-radius: 42px;
     font-size: 15px;
@@ -128,6 +128,8 @@ background: rgb(30, 33, 103);
 .rightsection {
     padding-left: 11%;
 }
+
+
 
 .purple {
     color: rgb(170, 107, 228);
@@ -223,7 +225,7 @@ main hr {
     top: 0;
     transform: translateX(-50%);
     animation: growLineIncrementally 8s ease forwards; 
-    animation-delay: 4s;
+    animation-delay: 5s;
 }
 
 
@@ -442,8 +444,8 @@ main hr {
 .skill-card-back ul {
     list-style: none;
     padding: 0;
-    width: 100%;
-    height: 96%;
+    width: 97%;
+    height: 99%;
 }
 
 .skill-card-back ul li {
@@ -604,11 +606,11 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .burger {
         display: flex;
     }
-    @media (max-width: 769px) {
+
         .skills-content {
             flex-direction: column;
         }
@@ -627,12 +629,8 @@ footer {
     .nav-links.active {
         display: flex;
     }
-}
 
-@media (max-width: 768px) {
-
-
-    .timeline:before {
+   .timeline:before {
         content: '';
         position:absolute;
         left: 10%;
@@ -647,7 +645,7 @@ footer {
             transform: translateX(50%); 
         }
     
-     .timeline-item.right .content,
+    .timeline-item.right .content,
     .timeline-item.left .content {
             width: 80%; 
             transform: translateX(0); 
@@ -661,7 +659,7 @@ footer {
         width: 29px;
         height: auto;
         left: 7.7%;
-        top:-22%
+        top:-13%
         }
         .timeline-item.right .image-container {
             position: absolute;
@@ -674,4 +672,30 @@ footer {
 
 
 }
+
+@media screen and (max-width: 925px) {
+    .firstsection {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .firstsection > div {
+        width: 100%;
+    }
+
+    .leftsection {
+        font-size: 1.5rem;
+        margin: 20px 0;
+    }
+
+    .rightsection {
+        padding-left: 0;
+    }
+
+    .rightsection img {
+        width: 50%;
+        height: auto;
+        border-radius: 50%;
+    }
 }
