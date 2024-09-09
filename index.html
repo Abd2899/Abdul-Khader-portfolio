@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdul Khader's Portfolio Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +17,14 @@
 <body>
     <header>
         <nav>
-            <div class="left"> Abdul Khader's Portfolio
-
-            </div>
+            <div class="left">Abdul Khader's Portfolio</div>
             <div class="right">
-                <ul>
+                <div class="burger" id="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#Education">Education</a></li>
@@ -32,24 +34,23 @@
                     <li><a href="#footer">Contact</a></li>
                 </ul>
             </div>
-
         </nav>
-
     </header>
+
     <div id="home"></div>
+
     <main>
-
-
         <section class="firstsection">
-            <div class="leftsection">Hi, This is <span class="purple">Abdul Khader</span>
-                <div></a>
+            <div class="leftsection">
+                Hi, This is <span class="purple">Abdul Khader</span>
+                <div>
                     A Software Engineer and
                     <div>
                         Graduate Student with Expertise in
                         <div><span id="element"></span></div>
                         <div class="btn">
                             <a href="Abdul Khader's resume.pdf" download="Abdul Khader's resume">
-                                <button class="buttons">Download Resume
+                                <button class="buttons">View Resume
 
                                 </button></a>
                             <a href="https://github.com/Abd2899" target="_blank">
@@ -60,24 +61,24 @@
                 </div>
             </div>
             <div class="rightsection">
-                <img src="2.JPG" alt="image">
+                <img src="2.JPG" alt="image" id="profile-picture">
             </div>
         </section>
+
         <hr>
+
         <section id="About" class="aboutsection">
             <h1>About Me</h1>
             <div class="about-content">
-
                 <div class="aboutme">
                     <p>I'm <span class="highlight">Abdul Khader</span>, I started my journey by developing web
                         applications using technologies like React, HTML, and JavaScript, which sparked my passion for
-                        building user-friendly and efficient software.
-                        Over the years, I’ve gained hands-on experience in SAP projects, where I led system integrations
-                        and enhanced business processes.
-                        Currently, I’m expanding my expertise in AI and software engineering as part of my Master’s
-                        studies, aiming to apply cutting-edge technologies to real-world challenges.
-                        I enjoy learning, collaborating, and mentoring, and I’m always open to new opportunities.<br />
-
+                        building user-friendly and efficient software. Over the years, I’ve gained hands-on experience
+                        in SAP projects, where I led system integrations and enhanced business processes. Currently, I’m
+                        expanding my expertise in AI and software engineering as part of my Master’s studies, aiming to
+                        apply cutting-edge technologies to real-world challenges. I enjoy learning, collaborating, and
+                        mentoring, and I’m always open to new opportunities.<br />
+                    </p>
                     <div>
                         If you’d like to know more about my journey or connect with me, feel free to
                         <a href="mailto:abdul.khader2899@gmail.com">contact me.</a>
@@ -87,190 +88,232 @@
         </section>
 
         <hr>
+
         <section id="Education" class="educationsection">
             <h1>Education</h1>
             <div class="education-content">
                 <div class="degree">
                     <h2>Master of Science in Computer Science</h2>
-                    <p>University of North Texas <img class="image1" src="UNT1.png" alt="University image">(01/2023 -
-                        Present) GPA: 4.0</p>
-                    <p>Texas, United Sates</p>
-
+                    <p>University of North Texas <img class="image1" src="UNT1.png" alt="University image">
+                        (01/2023 - Present) GPA: 4.0</p>
+                    <p>Texas, United States</p>
                 </div>
                 <div class="degree">
                     <h2>Bachelor of Technology in Computer Science</h2>
                     <p>RVR & JC College of Engineering <img class="image1" src="rvrjc.jpeg" alt="University image">
-                        (2016 - 2020) GPA: 8.4 </p>
+                        (2016 - 2020) GPA: 8.4</p>
                     <p>Andhra Pradesh, India</p>
                 </div>
             </div>
         </section>
+
         <hr>
-        <div class="grey">What I have done so far...</div>
+
         <section id="Work" class="worksection">
-           
-            <div><h1>Work Experience</h1></div>
-            <div class="horizontalline">
-                <div class="verticalline">
-                    <img class="Devimage" src="UNT.png" alt="Developer Image">
-                    <div class="worktitle">Instructional Assistant (08/2024-Present)</div>
-                    <div class="workdesc">Assisted professor with exams, teaching classes, projects. Grading and
-                        monitoring the students assignments to ensure academic integrity</div>
-                </div>
-                <div class="verticalline">
-                    <img class="Devimage" src="Developer.png" alt="Developer Image">
-                    <div class="worktitle">Student Assistant (01/2023-08/2024)</div>
-                    <div class="workdesc">Administered and monitored over 100 exams, provided technical support to more
-                        than 500 candidates,
-                        Developed and maintained University's online exam portal increasing student engagement through
-                        enhanced user experience and functionality.
+            <h1>Work Experience</h1>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="image-container">
+                        <img class="Devimage" src="UNT.png" alt="Instructional Assistant">
+                    </div>
+                    <div class="content">
+                        <div class="worktitle">Instructional Assistant (08/2024-Present)</div>
+                        <div class="workdesc">Assisted professor with exams, teaching classes, projects. Grading and
+                            monitoring the students' assignments to ensure academic integrity.</div>
                     </div>
                 </div>
-                <div class="verticalline">
-                    <img class="Devimage" src="cocacola.jpeg" alt="Developer Image">
-                    <div class="worktitle">Senior SystemsEngineer (12/2021-12/2022)</div>
-                    <div class="workdesc">Led multiple SAP implementations for Coca-Cola, increasing processing
-                        efficiency by 20% and user adoption by 20%, while reducing project timelines by 25%. Involved in
-                        managing SAP SD integrations with MM, LE, and EWM modules, and improving system performance
-                        through strategic middleware integration and process enhancements.</div>
-                </div>
-                <div class="verticalline">
-                    <img class="Devimage" src="SAP logo.png" alt="Developer Image">
-                    <div class="worktitle">Systems Engineer (11/2020-12/2021)</div>
-                    <div class="workdesc">Configured and deployed SAP SD modules, supported testing and cutover
-                        activities, and contributed to successful project transitions. Developed foundational ABAP
-                        debugging skills to optimize system performance and ensure alignment with business requirements.
+                <div class="timeline-item right">
+                    <div class="image-container">
+                        <img class="Devimage" src="Developer.png" alt="Student Assistant">
+                    </div>
+                    <div class="content">
+                        <div class="worktitle">Student Assistant (01/2023-08/2024)</div>
+                        <div class="workdesc">Administered and monitored over 100 exams, provided technical support to
+                            more than 500 candidates. Developed and maintained the University's online exam portal,
+                            increasing student engagement through enhanced user experience and functionality.</div>
                     </div>
                 </div>
-                <div class="verticalline">
-                    <img class="Devimage" src="reactlogo.png" alt="Developer Image">
-                    <div class="worktitle">Software Intern (05/2019-12/2019)</div>
-                    <div class="workdesc">Developed and optimized web pages using React, HTML5, CSS, and JavaScript,
-                        which improved client satisfaction and website performance.
-                        Supported senior developers in creating and debugging web applications, gaining valuable
-                        experience in front-end development./div>
+                <div class="timeline-item left">
+                    <div class="image-container">
+                        <img class="Devimage" src="cocacola.jpeg" alt="Senior Systems Engineer">
                     </div>
-
+                    <div class="content">
+                        <div class="worktitle">Senior Systems Engineer (12/2021-12/2022)</div>
+                        <div class="workdesc">Led multiple SAP implementations for Coca-Cola, increasing processing
+                            efficiency by 20% and user adoption by 20%, while reducing project timelines by 25%.
+                            Involved in managing SAP SD integrations with MM, LE, and EWM modules, and improving system
+                            performance through strategic middleware integration and process enhancements.</div>
+                    </div>
                 </div>
-
-
+                <div class="timeline-item right">
+                    <div class="image-container">
+                        <img class="Devimage" src="SAP logo.png" alt="Systems Engineer">
+                    </div>
+                    <div class="content">
+                        <div class="worktitle">Systems Engineer (11/2020-12/2021)</div>
+                        <div class="workdesc">Configured and deployed SAP SD modules, supported testing and cutover
+                            activities, and contributed to successful project transitions. Developed foundational ABAP
+                            debugging skills to optimize system performance and ensure alignment with business
+                            requirements.</div>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="image-container">
+                        <img class="Devimage" src="reactlogo.png" alt="Software Intern">
+                    </div>
+                    <div class="content">
+                        <div class="worktitle">Software Intern (05/2019-12/2019)</div>
+                        <div class="workdesc">Developed and optimized web pages using React, HTML5, CSS, and JavaScript,
+                            which improved client satisfaction and website performance. Supported senior developers in
+                            creating and debugging web applications, gaining valuable experience in front-end
+                            development.</div>
+                    </div>
+                </div>
             </div>
         </section>
-        <hr>
+      <hr>
         <section id="Skills" class="skillssection">
             <h1>Skills</h1>
             <div class="skills-content">
-                <div class="skill-group">
-                    <h2>Technical Skills</h2>
-                    <ul>
-                        <li><strong>Programming Languages:</strong> Python, Java, C++, C, R Programming</li>
-                        <li><strong>Web Development:</strong> HTML, CSS, Java Script, PHP, React, D3.JS</li>
-                        <li><strong>Data Analytics:</strong> SQL, Tableau, PowerBI, Excel, Oracle</li>
-                        <li><strong>SAP Expertise:</strong> Sales & Distribution ,ABAP Development, Material Management, Logistics Execution, Warehouse Management </li>
-                        <li><strong>Techs: </strong> GitHub, Visual Studio Code, Azure Devops, Jira</li>
-                    </ul>
+                <div class="skill-card">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                            <img class ="skillimage" src="tech.jpg" alt="sapimage">
+                            <h2>Technical Skills</h2>
+                        
+                    </div>
+                        <div class="skill-card-back">
+                            <ul>
+                                <li><strong>Programming Languages:</strong> Python, Java, C++, C, R Programming</li>
+                                <li><strong>Web Development:</strong> HTML, CSS, JavaScript, PHP, React, D3.js</li>
+                                <li><strong>Data Analytics:</strong> SQL, Tableau, PowerBI, Excel, Oracle</li>
+                                <li><strong>SAP Expertise:</strong> Sales & Distribution, ABAP Development, Material
+                                    Management, Logistics Execution, Warehouse Management</li>
+                                <li><strong>Techs:</strong> GitHub, Visual Studio Code, Azure DevOps, Jira</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-group">
-                    <h2>Soft Skills</h2>
-                    <ul>
-                        <li><strong>Problem-Solving:</strong> Effective troubleshooting and issue resolution</li>
-                        <li><strong>Communication:</strong> Clear and concise interaction with stakeholders and team members</li>
-                        <li><strong>Team Collaboration:</strong> Experience working with professors and colleagues to enhance procedures</li>
-                        <li><strong>Adaptability:</strong> Ability to learn and apply new technologies quickly</li>
-                    </ul>
+                <div class="skill-card">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                        <img class = "skillimage" src="softskills.jpeg" alt="sapimage">
+                            <h2>Soft Skills</h2>
+                        
+                    </div>
+                        <div class="skill-card-back">
+                            <ul>
+                                <li><strong>Problem-Solving:</strong> Effective troubleshooting and issue resolution
+                                </li>
+                                <li><strong>Communication:</strong> Clear and concise interaction with stakeholders and
+                                    team members</li>
+                                <li><strong>Team Collaboration:</strong> Experience working with professors and
+                                    colleagues to enhance procedures</li>
+                                <li><strong>Adaptability:</strong> Ability to learn and apply new technologies quickly
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+
         <hr>
+
         <section id="Projects" class="projectssection">
             <h1>Projects</h1>
-            <a herf ="/" class ="uponhover">
             <div class="projects-content">
                 <div class="project-card">
                     <img src="Project1.jpg" alt="Project 1 Image" class="project-img">
                     <div class="project-info">
                         <h2>Machine Learning for Enhanced Health-Care Diagnostics</h2>
-                        <p class ="desc">This project is aimed to develop a predictive machine learning model 
-                            using techniques such as Naive Bayes, SVM, Decision Trees to prevent, diagonise heart diseases early </p>
-                        <a href="https://github.com/Abd2899/Machine-Learning-for-Enhanced-Health-Care-Diagnostics" target="_blank" class="project-link">View on GitHub</a>
+                        <p class="desc">This project is aimed at developing a predictive machine learning model using
+                            techniques such as Naive Bayes, SVM, and Decision Trees to prevent and diagnose heart
+                            diseases early.</p>
+                        <a href="https://github.com/Abd2899/Machine-Learning-for-Enhanced-Health-Care-Diagnostics"
+                            target="_blank" class="project-link">View on GitHub</a>
                     </div>
                 </div>
                 <div class="project-card">
                     <img src="Project2.jpg" alt="Project 2 Image" class="project-img">
                     <div class="project-info">
                         <h2>Texas Online Health Appointment System</h2>
-                        <p class ="desc">
-                            This application allows patients to easily book appointments and schedule medical tests by selecting their preferred doctor and location.
-                           It provides a user-friendly way to organize medical care efficiently.
-                        </p>
-                        <a href="https://github.com/Abd2899/Texas-Online-Health-Appointment-System" target="_blank" class="project-link">View on GitHub</a>
+                        <p class="desc">This application allows patients to easily book appointments and schedule
+                            medical tests by selecting their preferred doctor and location. It provides a user-friendly
+                            way to organize medical care efficiently.</p>
+                        <a href="https://github.com/Abd2899/Texas-Online-Health-Appointment-System" target="_blank"
+                            class="project-link">View on GitHub</a>
                     </div>
                 </div>
                 <div class="project-card">
                     <img src="Project3.jpeg" alt="Project 3 Image" class="project-img">
                     <div class="project-info">
                         <h2>Covid E-commerce Insights</h2>
-                        <p class ="desc">
-                            This project intends to explain the complex relationship between
-                            the Supply Chain and e-commerce sales during COVID-19 Era using data visulization tools such as Tableau,
-                            Angular, D3.JS.
-
-                        </p>
-                        <a href="https://github.com/Abd2899/Covid-Ecommerce-Insights--Analysing-the-Impact" target="_blank" class="project-link">View on GitHub</a>
+                        <p class="desc">This project intends to explain the complex relationship between the Supply
+                            Chain and e-commerce sales during the COVID-19 era using data visualization tools such as
+                            Tableau, Angular, and D3.js.</p>
+                        <a href="https://github.com/Abd2899/Covid-Ecommerce-Insights--Analysing-the-Impact"
+                            target="_blank" class="project-link">View on GitHub</a>
                     </div>
                 </div>
                 <div class="project-card">
                     <img src="Project4.png" alt="Project 4 Image" class="project-img">
                     <div class="project-info">
                         <h2>Mobile Payment System</h2>
-                        <p class ="desc">  
-                            The application is to assist mobile phone users to access the
-                             information of different bills, send and receive queries
-                             requested by the user from anywhere and anytime 
-                             </p>
-                        <a href="https://github.com/Abd2899/Mobile-Payment-System" target="_blank" class="project-link">View on GitHub</a>
+                        <p class="desc">The application assists mobile phone users in accessing information about
+                            different bills, sending and receiving queries requested by the user from anywhere and
+                            anytime.</p>
+                        <a href="https://github.com/Abd2899/Mobile-Payment-System" target="_blank"
+                            class="project-link">View on GitHub</a>
                     </div>
                 </div>
             </div>
-        </a>
         </section>
-        
-    
-       
     </main>
 
-    </div>
-  
-    <footer >
-        <div class="footer-content" id ="footer">
-            <p>Contact me at: +1 940 977 5021, 
-                <img src ="mail.png"/> :<a href="mailto:abdul.khader2899@gmail.com">abdul.khader2899@gmail.com</a></p>
+    <footer>
+        <div class="footer-content" id="footer">
+            <p>Contact me at:
+            <p><img src="call.png" alt="Mail Icon" /> : +1 940 977 5021, </p>
+            <p><img src="mail.png" alt="Mail Icon" /> : <a
+                    href="mailto:abdul.khader2899@gmail.com">abdul.khader2899@gmail.com</a></p>
             <p>Connect with me:</p>
             <ul class="social-links">
-                <li><a href = https://www.linkedin.com/in/abdulkhader-shaik><img src ="linkedin.png"/></a></li>
-                <li><a href="https://github.com/Abd2899" target="_blank" class="github"><img src ="github.png"/></a></li>
+                <li><a href="https://www.linkedin.com/in/abdulkhader-shaik" target="_blank"><img src="linkedin.png"
+                            alt="LinkedIn Icon" /></a></li>
+                <li><a href="https://github.com/Abd2899" target="_blank" class="github"><img src="github.png"
+                            alt="GitHub Icon" /></a></li>
             </ul>
             <p>&copy; 2024 Abdul Khader. All rights reserved.</p>
         </div>
     </footer>
 
-    
-    
-
-
-
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Development', 'Data Analytics', 'Building MachineLearning Models', 'SAP Implementations'],
-            typeSpeed: 60,
-            loop:true,
-            backdelay:1000,
-            backspeed:1000,
-            startdelay:1000,
+        document.addEventListener('DOMContentLoaded', () => {
+            var typed = new Typed('#element', {
+                strings: ['Web Development', 'Data Analytics', 'Building Machine Learning Models', 'SAP Implementations'],
+                typeSpeed: 60,
+                loop: true,
+
+
+            });
+
+            const burgerIcon = document.getElementById('burger-icon');
+            const navLinks = document.getElementById('nav-links');
+
+            burgerIcon.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                burgerIcon.classList.toggle('toggle');
+            });
+
+            navLinks.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                burgerIcon.classList.remove('toggle');
+            });
         });
     </script>
-
 </body>
 
 </html>
