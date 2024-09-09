@@ -225,7 +225,7 @@ main hr {
     top: 0;
     transform: translateX(-50%);
     animation: growLineIncrementally 8s ease forwards; 
-    animation-delay: 5s;
+    animation-delay: 9s;
 }
 
 
@@ -252,27 +252,27 @@ main hr {
 
 .timeline-item:nth-child(1) {
     animation: fadeIn 1s ease forwards;
-    animation-delay: 5s;
+    animation-delay: 10s;
 }
 
 .timeline-item:nth-child(2) {
     animation: fadeIn 1s ease forwards;
-    animation-delay: 6s;
+    animation-delay: 11s;
 }
 
 .timeline-item:nth-child(3) {
     animation: fadeIn 1s ease forwards;
-    animation-delay: 7s;
+    animation-delay: 12s;
 }
 
 .timeline-item:nth-child(4) {
     animation: fadeIn 1s ease forwards;
-    animation-delay: 8s;
+    animation-delay: 13s;
 }
 
 .timeline-item:nth-child(5) {
     animation: fadeIn 1s ease forwards;
-    animation-delay: 10s;
+    animation-delay: 15s;
 }
 .content {
     background: #34495e;
