@@ -62,6 +62,7 @@ nav ul li a:focus {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    
 }
 
 .burger span {
@@ -70,6 +71,7 @@ nav ul li a:focus {
     width: 25px;
     margin: 3px 0;
     border-radius: 3px;
+   
 }
 
 .nav-links {
@@ -224,8 +226,8 @@ main hr {
     border-left: 2px solid white;
     top: 0;
     transform: translateX(-50%);
-    animation: growLineIncrementally 8s ease forwards; 
-    animation-delay: 9s;
+    animation: growLineIncrementally 8s ease infinite; 
+    animation-delay: 10s;
 }
 
 
@@ -237,7 +239,8 @@ main hr {
     width: 100%;
     opacity: 0; 
     transform: translateY(30px); 
-    transition: all 10s ease; 
+    animation: fadeIn 8s ease infinite;
+    animation-delay: 10s;
 }
 
 .timeline-item.left .content {
@@ -251,28 +254,23 @@ main hr {
 }
 
 .timeline-item:nth-child(1) {
-    animation: fadeIn 1s ease forwards;
-    animation-delay: 10s;
+    animation-delay: .5s;
 }
 
 .timeline-item:nth-child(2) {
-    animation: fadeIn 1s ease forwards;
-    animation-delay: 11s;
+    animation-delay: 1.5s; 
 }
 
 .timeline-item:nth-child(3) {
-    animation: fadeIn 1s ease forwards;
-    animation-delay: 12s;
+    animation-delay: 2.5s;
 }
 
 .timeline-item:nth-child(4) {
-    animation: fadeIn 1s ease forwards;
-    animation-delay: 13s;
+    animation-delay: 3.5s;
 }
 
 .timeline-item:nth-child(5) {
-    animation: fadeIn 1s ease forwards;
-    animation-delay: 15s;
+    animation-delay: 4.5s;
 }
 .content {
     background: #34495e;
@@ -609,11 +607,9 @@ footer {
 @media (max-width: 769px) {
     .burger {
         display: flex;
+  
+ 
     }
-
-        .skills-content {
-            flex-direction: column;
-        }
 
     .nav-links {
         display: none;
@@ -623,11 +619,16 @@ footer {
         position: absolute;
         top: 80px; 
         left: 0;
-        background-color: rgb(18, 18, 62);
+        background-color: rgb(0, 0, 33);
+        z-index: 1;
     }
 
     .nav-links.active {
         display: flex;
+    }
+
+    .skills-content {
+        flex-direction: column;
     }
 
    .timeline:before {
