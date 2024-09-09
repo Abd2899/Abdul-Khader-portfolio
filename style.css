@@ -227,7 +227,7 @@ main hr {
     top: 0;
     transform: translateX(-50%);
     animation: growLineIncrementally 8s ease infinite; 
-    animation-delay: 10s;
+   
 }
 
 
