@@ -308,12 +308,16 @@ main hr {
 }
 
 .worktitle {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     margin: 10px 0;
 }
 .workdesc {
     color: grey;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+}
+.company{
+    font-size: 1.0rem;
+    
 }
 
 @keyframes growLineIncrementally {
